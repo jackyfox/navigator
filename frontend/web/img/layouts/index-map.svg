@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1109 702" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1109" height="702" fill="white"/>
+<path d="M68.5423 523.71C159.679 314.697 406.23 -18.6918 663.344 319.86C984.737 743.049 -19.9283 755.04 68.5423 523.71Z" fill="#00C2FF" fill-opacity="0.05"/>
+<path d="M301.246 555.082C173.257 670.673 496.231 669.907 673.717 655.075H965.194C1002.02 514.918 1053.59 224.106 965.194 182.109C854.702 129.613 737.712 221.606 724.713 339.597C711.714 457.589 461.234 410.592 301.246 555.082Z" fill="#00B2FF" fill-opacity="0.05"/>
+<g clip-path="url(#clip0)">
+<rect width="659" height="352" transform="translate(234 270)" fill="white"/>
+<rect x="235" y="270" width="658" height="352" fill="#FBFBFB"/>
+<path d="M765 437C698.667 414.667 557.7 410.1 524.5 570.5" stroke="#0029FF" stroke-width="3"/>
+<rect x="861.141" y="252.752" width="11" height="734.394" transform="rotate(59.4027 861.141 252.752)" fill="#E2E2E2"/>
+<rect x="244" y="523.5" width="325.174" height="49" transform="rotate(-30 244 523.5)" fill="#C4C4C4"/>
+<rect x="229" y="492.701" width="67.4012" height="21.6324" transform="rotate(-30 229 492.701)" fill="#C4C4C4"/>
+<rect x="173.652" y="397.476" width="67.4012" height="92.329" transform="rotate(-30 173.652 397.476)" fill="#C4C4C4"/>
+<path d="M510 563.5L352 377" stroke="#AD00FF" stroke-width="3"/>
+<rect x="206.162" y="281.163" width="152.62" height="215.175" transform="rotate(-30 206.162 281.163)" fill="#C4C4C4"/>
+<rect x="908.347" y="447.448" width="152.62" height="215.175" transform="rotate(60 908.347 447.448)" fill="#C4C4C4"/>
+<rect x="795.883" y="376" width="88.3967" height="89.9317" transform="rotate(60 795.883 376)" fill="#C4C4C4"/>
+<rect x="932.322" y="398.066" width="82.9564" height="116.959" transform="rotate(150 932.322 398.066)" fill="#C4C4C4"/>
+<path d="M773 438.5C740 396.333 693.8 312 773 312C813 309.833 869 332.1 773 438.5Z" fill="#2C49E4"/>
+<rect x="661.322" y="341.289" width="82.9564" height="116.959" transform="rotate(150 661.322 341.289)" fill="#C4C4C4"/>
+<circle cx="527" cy="566" r="31" fill="#C4C4C4"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="659" height="352" fill="white" transform="translate(234 270)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,99 @@
+.header-page {
+	background: url(../img/bg-page.svg) left 99% no-repeat, linear-gradient(155.41deg, #4FACFE 0%, #00F2FE 137.36%);
+    background-size: cover;
+    border-radius: 0px;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+
+.header-page h1 {
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 50px;
+    font-weight: bold;
+    line-height: 32px;
+    font-size: 36px;
+    margin: 30px 0 15px;
+	width: inherit;
+}
+
+.header-page p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.container.main {
+	background: #FCFCFC;
+}
+
+form#test-form {
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+    padding: 0 40px;
+    display: block;
+}
+
+label.vopros,
+label.fio {
+	font-weight: bold;
+}
+
+.btn.btn-info,
+.btn.btn-primary,
+.btn.btn-success {
+	margin: 15px 0;
+    color: #ffffff;
+    background: #4FACFE;
+    border-color: #4FACFE;
+}
+
+.btn.btn-info:hover,
+.btn.btn-info:focus,
+.btn.btn-primary:hover,
+.btn.btn-success:hover,
+.btn.btn-primary:focus,
+.btn.btn-success:focus {
+    color: #ffffff;
+    background: #00A3FF;
+    border-color: #4FACFE;
+}
+
+.btn.btn-info:active,
+.btn.btn-primary:active,
+.btn.btn-success:active  {
+    color: #ffffff;
+    background-color: #4FACFE !important;
+    border-color: #4FACFE !important;
+}
+
+.userName {
+	padding: 20px 0;
+}
+
+.questions {
+	padding-bottom: 20px;
+}
+
+.form-control {
+	border-color: #00C2FF !important;
+}
+
+p.responseParagraf {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.qr-code {
+	text-align: center;
+}
+
+.btn.btn-primary {
+	margin-right: 50px;
+}
+

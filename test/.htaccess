@@ -1,0 +1,15 @@
+RewriteEngine On RewriteBase /
+
+# Если это папка или файл, открываем его
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# В противном случае перенаправляем на index.php
+RewriteRule . index.php
+
+#переход на https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+#php_flag  log_errors on
+#php_value error_log  /home/a0245025/domains/profinavigator.ru/public_html/PHP_error.log

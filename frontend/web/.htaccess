@@ -1,0 +1,22 @@
+RewriteEngine On RewriteBase /
+
+# Если это папка или файл, открываем его
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# В противном случае перенаправляем на index.php
+RewriteRule . index.php
+
+#Последовательность разрещений доступа
+#order deny,allow 
+#Блокировка всех
+#deny from all 
+# Белый список 
+#Рувим
+#allow from 5.189.192.183
+#академия
+#allow from 78.111.93.162
+#я динамика
+#allow from 176.59.6.188 
+# даша
+#allow from 178.252.70.83

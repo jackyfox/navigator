@@ -1,0 +1,20 @@
+RewriteEngine On RewriteBase /
+
+# Если это папка или файл, открываем его
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# В противном случае перенаправляем на index.php
+RewriteRule . index.php
+
+
+#Авторизация в каталоге
+AuthType Basic
+AuthName "Thats protected Area!"
+AuthUserFile /home/a0245025/domains/profinavigator.ru/public_html/backend/web/.htpasswd
+Require valid-user
+
+
+<Files .htpasswd>
+   deny from all  #запрет доступа из браузера к .htpasswd
+</Files>

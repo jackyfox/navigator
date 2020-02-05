@@ -1,0 +1,65 @@
+Options +FollowSymlinks
+IndexIgnore */*
+RewriteEngine On
+
+#переход на https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
+RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/backend/web/(assets|css)/
+RewriteCond %{REQUEST_URI} ^/(admin)
+RewriteRule ^.*$ backend/web/index.php [L]
+
+RewriteCond %{REQUEST_URI} ^/(assets|css|js|images|fonts|uploads|robots.txt)
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ frontend/web/js/$1 [L]
+RewriteRule ^images/(.*)$ frontend/web/images/$1 [L]
+RewriteRule ^fonts/(.*)$ frontend/web/fonts/$1 [L]
+RewriteRule ^fonts/(.*)$ frontend/web/uploads/$1 [L]
+RewriteRule ^robots.txt/(.*)$ frontend/web/robots.txt/$1 [L]
+RewriteRule ^(.*)$ frontend/web/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|css|js)/
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ frontend/web/index.php
+
+#для поддомена excel
+RewriteCond %{HTTP_HOST} ^excel.site.ru$
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/excel(?:/|$)
+RewriteRule ^(.*)$ excel/$1 [L,QSA]
+#конец для поддомена excel
+
+#для поддомена game
+RewriteCond %{HTTP_HOST} ^game.site.ru$
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/game(?:/|$)
+RewriteRule ^(.*)$ game/$1 [L,QSA]
+#конец для поддомена game
+
+#для поддомена test
+RewriteCond %{HTTP_HOST} ^test.site.ru$
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/test(?:/|$)
+RewriteRule ^(.*)$ test/$1 [L,QSA]
+#конец для поддомена test
+
+
+# BEGIN UTF8
+AddDefaultCharset utf-8
+AddCharset utf-8 *
+<IfModule mod_charset.c>
+CharsetSourceEnc utf-8
+CharsetDefault utf-8
+</IfModule>
+# END UTF8
+
+#php_flag  log_errors on
+#php_value error_log  /home/a0245025/domains/profinavigator.ru/public_html/PHP_error.log

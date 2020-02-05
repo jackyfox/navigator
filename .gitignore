@@ -4,3 +4,9 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+frontend/runtime/*
+frontend/web/upload/*
+frontend/web/assets/*
+vendor/*
+backend/runtime/*
+backend/web/assets/*
